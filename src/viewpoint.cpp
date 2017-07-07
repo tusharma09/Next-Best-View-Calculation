@@ -98,7 +98,6 @@ void ViewPoint::SetVectorDirectionToAvoid(pcl::PointXYZ vector)
     if(angle_with_z > 45)
     {
         if(angle_with_y > 90)
-            //                        angle_with_x = 360 - angle_with_x;
             angles_to_avoid.push_back(360 - angle_with_x);
         else
             angles_to_avoid.push_back(angle_with_x);
